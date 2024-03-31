@@ -1,8 +1,15 @@
 import './App.css';
 
+import{name} from "./data.js";
+
+import {User} from "./components/user.js"
+
 function App() {
+  
   return <div>
-    <h1>Users</h1>
+    <h1>Users:</h1>
+    <h2>Hello {name}</h2>
+    <h3>have a good day</h3>
     <section className="container">
     <User name="sha" Job="developer" Location="hyd"/>
     <User Job="software developer" Location="vij" />
@@ -10,16 +17,13 @@ function App() {
     <User name="Zakeer" job="UI developer" Location="ongole"/>
     <User name="Jabeen" job="UI design" Location="vijayawada"/>
 
+
+
+
     </section>
     </div>
-}
+} 
 
 
-function User(props){
-  return <div className="user other-class">
-    <h3>{props.name}</h3>
-    <p>Job:{props.Job}</p>
-    <p>Location:{props.Location}</p>
-  </div>
-}
+
 export default App;
