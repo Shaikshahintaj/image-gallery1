@@ -4,12 +4,15 @@ import{name} from "./data.js";
 
 import {User} from "./components/user.js"
 
+import shah from"./constants.js";
+
 function App() {
   
   return <div>
     <h1>Users:</h1>
     <h2>Hello {name}</h2>
     <h3>have a good day</h3>
+    <h1>{shah}</h1>
     <section className="container">
     <User name="sha" Job="developer" Location="hyd"/>
     <User Job="software developer" Location="vij" />
